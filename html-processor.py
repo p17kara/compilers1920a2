@@ -31,15 +31,15 @@ re7 = re.compile(r'\s+')
 
 with open('testpage.txt','r') as fp:
 
-  a = fp.read() 
-  m = re1.search(a) 
+  t = fp.read() 
+  m = re1.search(t) 
   print(m.group(1))	
-  a = re2.sub(' ',a)
-  a = re3.sub(' ',a) 
-  for m in re4.finditer(a): 
+  t = re2.sub(' ',t)
+  t = re3.sub(' ',t) 
+  for m in re4.finditer(t): 
     print('{}    {}'.format(m.group(1),m.group(2)))
-  a = re5p1.sub(' ',a) 
-  a = re5p2.sub(' ',a) 
-  a = re6.sub(function,a) 
-  a = re7.sub(' ',a) 
-  print(a)
+  t = re5p1.sub(' ',t) 
+  t = re5p2.sub(' ',t) 
+  t = re6.sub(function,t) 
+  t = re7.sub(' ',t) 
+  print(t)
